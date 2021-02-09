@@ -7,17 +7,48 @@
     <title>Demo-project</title>
   </head>
   <body>
-    <h1>Trivia Game</h1>
-   
-      <div id="container">
-        <div id="question"></div>
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
-        <button id="answer4"></button>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start</button></div>
+
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Trivia game</h1>
+            <a class="btn" href="/game.html">eka nappi</a>
+            <a class="btn" href="/highscores.html">toka nappi</a>
+        </div>
       </div>
-  
     
+       <!-- Quiz Box -->
+       <div class="quiz_box">
+        <header>
+            <div class="title">Tietovisa</div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>This is the question text</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>This is an option text</span>
+                </div>
+                <div class="option">
+                    <span>This is an option text</span>
+                </div>
+                <div class="option">
+                    <span>This is an option text</span>
+                </div>
+                <div class="option">
+                    <span>This is an option text</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+  
     <script src="app.js"></script>
   </body>
 </html>
