@@ -1,5 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto+Condensed:wght@300&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+p,
+span,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
 :root {
-  background-color: #a3f7b1;
+  background-color: #0b2064;
   font-size: 62.5%;
 }
 
@@ -9,29 +24,6 @@
   margin: 0;
   padding: 0;
   color: #333;
-}
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 5.4rem;
-  color: #56a5eb;
-  margin-bottom: 5rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-  margin-bottom: 4rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2.8rem;
-  font-weight: 500;
 }
 
 /* CONTAINER */
@@ -247,6 +239,45 @@ section .option_list .option:hover {
   border: 1px solid #b8daff;
 }
 
+section .option_list .option.correct {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+section .option_list .option.incorrect {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+section .option_list .option.disabled {
+  pointer-events: none;
+}
+
+section .option_list .option .icon {
+  height: 26px;
+  width: 26px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  line-height: 24px;
+}
+.option_list .option .icon.tick {
+  color: #23903c;
+  border-color: #23903c;
+  background: #d4edda;
+}
+
+.option_list .option .icon.cross {
+  color: #a42834;
+  background: #f8d7da;
+  border-color: #a42834;
+}
+
 /* FOOTER */
 footer {
   height: 60px;
@@ -254,7 +285,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*border-top: 1px solid lightgrey;*/
 }
 
 footer .next_btn {
@@ -269,12 +299,27 @@ footer .next_btn {
   border-radius: 5px;
   background: #007bff;
   border: 1px solid #007bff;
-  pointer-events: none;
   transition: all 0.3s ease;
 }
 
 footer .next_btn:hover {
   background: #0263ca;
+}
+
+footer .total_que span {
+  display: flex;
+  user-select: none;
+  font-size: medium;
+}
+
+footer .total_que span p {
+  font-weight: 500;
+  padding: 0 5px;
+  font-size: medium;
+}
+
+footer .total_que span p:first-child {
+  padding-left: 0px;
 }
 
 /* RESULT BOX */
