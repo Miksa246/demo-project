@@ -45,18 +45,18 @@ let questions = [
   
     {
     numb: 5,
-    question: "Missä sijaitsee kalakukkoaiheinen seinämaalaus?",
-    answer: "Keskustassa",
+    question: "Kuinka pitkä matka on Kuopion keskustasta lähimmälle lentokentälle",
+    answer: "14km",
     options: [
-      "Neulamäessä",
-      "Petosella",
-      "Männistössä",
-      "Keskustassa"
+      "9km",
+      "16km",
+      "19km",
+      "14km"
     ]
   },
     {
     numb: 6,
-    question: "Minä vuonna Matkuksen kauppakeskus avattiin?",
+    question: "Minä vuonna kauppakeskus Matkus avattiin?",
     answer: "2012",
     options: [
       "2010",
@@ -81,10 +81,10 @@ let questions = [
     question: "Kuinka monta ihmistä mahtuu Kuopion keskuskentän katsomoihin yhteensä?",
     answer: "4778",
     options: [
-      "3198",
-      "7443",
+      "1534",
+      "2540",
       "4778",
-      "1534"
+      "7244"
     ]
   },
     {
