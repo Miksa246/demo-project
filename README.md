@@ -15,7 +15,7 @@ Currently the application is not mobile responsive. However, updated are incomin
 Go to address https://tietovisailu.netlify.app/
 
 - Click "Aloita" and you are good to go.
-- The questionnaire results won't be saved.
+- The results won't be saved.
 
 # Author
 
