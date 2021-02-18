@@ -1,4 +1,3 @@
-
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
@@ -23,13 +22,11 @@ continue_btn.onclick = ()=>{
     queCounter(1); //passing 1 parameter to queCounter
 }
 
-
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
 let counter;
 let counterLine;
-let widthValue = 0;
 
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
@@ -41,7 +38,6 @@ restart_quiz.onclick = ()=>{
     que_count = 0;
     que_numb = 1;
     userScore = 0;
-    widthValue = 0;
     showQuetions(que_count); //calling showQestions function
     queCounter(que_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
@@ -60,13 +56,13 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 // if Next Que button clicked
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
-        que_count++; //increment the que_count value
-        que_numb++; //increment the que_numb value
-        showQuetions(que_count); //calling showQestions function
-        queCounter(que_numb); //passing que_numb value to queCounter
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        next_btn.classList.remove("show"); //hide the next button
+        que_count++; 
+        que_numb++; 
+        showQuetions(que_count); 
+        queCounter(que_numb); 
+        clearInterval(counter);
+        clearInterval(counterLine); 
+        next_btn.classList.remove("show"); 
     }else{
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
@@ -100,26 +96,25 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 //if user clicked on option
 function optionSelected(answer){
-    clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
+    clearInterval(counter); 
+    clearInterval(counterLine); 
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
     
-    if(userAns == correcAns){ //if user selected option is equal to array's correct answer
-        userScore += 1; //upgrading score value with 1
+    if(userAns == correcAns){ //if answer is right add user score by 1
+        userScore += 1; //
         answer.classList.add("correct"); //adding green color to correct selected option
         answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
     }
-    else{
-        answer.classList.add("incorrect"); //adding red color to correct selected option
+    else {
+        answer.classList.add("incorrect"); 
         answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
 
         for(i=0; i < allOptions; i++){
             if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
                 option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
-                option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
-                console.log("Auto selected correct answer.");
+                option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon
             }
         }
     }
