@@ -50,9 +50,9 @@ let questions = [
     answer: "14km",
     options: [
       "9km",
+      "14km",
       "16km",
-      "19km",
-      "14km"
+      "19km"
     ]
   },
     {
@@ -60,10 +60,10 @@ let questions = [
     question: "Minä vuonna kauppakeskus Matkus avattiin?",
     answer: "2012",
     options: [
+      "2009",
       "2010",
-      "2017",
       "2012",
-      "2009"
+      "2017"
     ]
   },
     {
@@ -93,10 +93,10 @@ let questions = [
     question: "Kuinka monta risteily-yritystä Kuopion satamassa toimii?",
     answer: "Neljä",
     options: [
+      "Ei yhtään",
       "Kaksi",
       "Neljä",
-      "Viisi",
-      "Ei yhtään"
+      "Viisi"
     ]
   },
   {

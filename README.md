@@ -3,15 +3,17 @@
 This simple web application is created during code BootCamp in 2021 as my first demo-project.
 
 This application uses:
+
 - JavaScript
 - HTML & CSS
 
-The application is deployed on Netlify. 
-Currently the application is not mobile responsive. However, updated are incoming soon. 
+The application is deployed on Netlify.
+Currently the application is not mobile responsive. However, updated are incoming soon.
 
 # How to use
 
 Go to address https://tietovisailu.netlify.app/
+
 - Click "Aloita" and you are good to go.
 - The questionnaire results won't be saved.
 

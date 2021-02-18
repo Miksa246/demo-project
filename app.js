@@ -38,10 +38,10 @@ restart_quiz.onclick = ()=>{
     que_count = 0;
     que_numb = 1;
     userScore = 0;
-    showQuetions(que_count); //calling showQestions function
-    queCounter(que_numb); //passing que_numb value to queCounter
-    clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
+    showQuetions(que_count); 
+    queCounter(que_numb); 
+    clearInterval(counter); 
+    clearInterval(counterLine); 
     next_btn.classList.remove("show"); //hide the next button
 }
 
@@ -64,8 +64,8 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); 
         next_btn.classList.remove("show"); 
     }else{
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
+        clearInterval(counter); 
+        clearInterval(counterLine); 
         showResult(); //calling showResult function
     }
 }
