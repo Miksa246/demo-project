@@ -35,6 +35,7 @@ let questions = [
     {
     numb: 4,
     question: "Montako askelmaa on Puijon hyppyrimäen portaissa?",
+    answer: 376,
     options: [
       "221",
       "312",
